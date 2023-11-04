@@ -42,6 +42,10 @@ def advanced():
 def labtest():
     return render_template('labtest.html')
 
+@app.route('/blog')
+def blog():
+    return render_template('blog.html')
+
 
 
 @app.route('/predict',methods=['post'])
